@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Interactive Web Page</h1>
+
+  <!-- FORM SECTION -->
+  <section>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password">
+      <button type="button" id="togglePassword">Show/Hide</button><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- COUNTER SECTION -->
+  <section>
+    <h2>Counter</h2>
+    <p>Count: <span id="count">0</span></p>
+    <button id="incrementBtn">Increment</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <!-- TOGGLE SECTION -->
+  <section>
+    <h2>Toggle Content</h2>
+    <button id="toggleBtn">Show/Hide Content</button>
+    <p id="toggleContent" style="display:none;">🎉 Surprise! You found the hidden content.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
